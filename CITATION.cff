@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software package and the related publications listed in the README."
+title: "LFP SOC and SOH Estimation"
+type: software
+version: 0.1.0
+date-released: 2026-09-03
+abstract: >-
+  Reproducible reference implementations for LFP battery state-of-charge
+  estimation using a reverse first-order model with LSTM, and state-of-health
+  estimation using short-pulse U1-U21 features with Random Forest.
+authors:
+  - family-names: "刘"
+    given-names: "佳俊"
+  - family-names: "刘"
+    given-names: "开畅"
+  - family-names: "姜"
+    given-names: "京浩"
+  - family-names: "赵"
+    given-names: "鲁豪"
+  - family-names: "贾"
+    given-names: "子寒"
+keywords:
+  - lithium iron phosphate
+  - state of charge
+  - state of health
+  - random forest
+  - LSTM

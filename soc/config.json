@@ -1,0 +1,35 @@
+{
+  "seed": 20250803,
+  "cell": "A1-007",
+  "temperatures_c": [0, 10, 20, 25, 30, 40, 50],
+  "train_profile": "DST",
+  "validation_profile": "FUDS",
+  "test_profile": "US06",
+  "profile_steps": {"DST": [8, 10], "US06": [16, 18], "FUDS": [24, 26]},
+  "pso": {
+    "particles": 30,
+    "iterations": 50,
+    "cognitive": 2.0,
+    "social": 2.0,
+    "inertia_start": 0.9,
+    "inertia_end": 0.4,
+    "position_bounds": {"r0_ohm": [0.001, 0.3], "r1_ohm": [0.001, 0.1], "c1_f": [0.001, 2000.0]},
+    "velocity_bounds": {"r0_ohm": [-0.06, 0.06], "r1_ohm": [-0.02, 0.02], "c1_f": [-400.0, 400.0]},
+    "soc_fit_range": [0.2, 0.9],
+    "polynomial_degree": 6
+  },
+  "lstm": {
+    "input_features": 3,
+    "hidden_size": 30,
+    "num_layers": 1,
+    "time_steps": 50,
+    "batch_size": 64,
+    "epochs": 300,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "mixed_precision": false,
+    "output_activation": "sigmoid",
+    "evaluation_batch_size": 2048
+  }
+}
